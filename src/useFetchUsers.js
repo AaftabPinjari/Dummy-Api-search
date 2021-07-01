@@ -21,7 +21,7 @@ function reducer(state, action) {
         case ACTIONS.GET_DATA:
             return { ...state, loading: false, users: action.payload.users }
         case ACTIONS.ERROR:
-            return { ...state, loading: false, jobs: [] }
+            return { ...state, loading: false, users: [] }
         default:
             return state
     }
